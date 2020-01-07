@@ -1,0 +1,13 @@
+version: "1.0"
+
+type: EXPORT
+name: CSVImportModule
+parameters:
+  - key: file
+    type: SCALAR
+    operationalType:
+      - CATEGORICAL
+    dataType:
+      - STRING
+    pattern: ".+"
+    required: true

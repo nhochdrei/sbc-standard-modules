@@ -1,0 +1,21 @@
+version: "1.0"
+
+type: IMPORT
+name: TextImportModule
+parameters:
+  - key: files
+    type: LIST
+    operationalType:
+      - CATEGORICAL
+    dataType:
+      - STRING
+    pattern: ".+"
+    required: true
+  - key: delimiter
+    type: SCALAR
+    operationalType:
+      - CATEGORICAL
+    dataType:
+      - STRING
+    pattern: ".{1}"
+    defaultValue: ","

@@ -1,0 +1,58 @@
+version: "1.0"
+
+name: DecisionTreeModule
+inputs:
+  - name: values
+    size:
+      amount: elemCount
+    vars:
+      - name: source
+        size:
+          amount: featureCount
+        operationalType:
+          - variant:
+              - CATEGORICAL
+              - ORDINAL
+              - CONTINUOUS
+        dataType:
+          - variant:
+              - INTEGER
+              - FLOAT
+              - STRING
+      - name: target
+        size:
+          amount: 1
+        operationalType:
+          - CATEGORICAL
+          - ORDINAL
+        dataType:
+          - STRING
+          - INTEGER
+outputs:
+  - name: nodes
+    size:
+      amount: nodeCount
+    vars:
+      - name: node
+        size:
+          amount: 1
+        operationalType:
+          - CATEGORICAL
+        dataType:
+          - INTEGER
+        unique: true
+      - name: children
+        size:
+          amount: 2
+        operationalType:
+          - CATEGORICAL
+        dataType:
+          - INTEGER
+        reference: outputs.nodes.node
+      - name: feature
+        size:
+          amount: 1
+        operationalType:
+          - CATEGORICAL
+        dataType:
+          - STRING

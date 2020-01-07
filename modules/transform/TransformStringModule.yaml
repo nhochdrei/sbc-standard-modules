@@ -1,0 +1,35 @@
+version: "1.0"
+
+name: "TransformString"
+parameters:
+  - key: action
+    type: LIST
+    operationalType:
+      - CATEGORICAL
+    dataType:
+      - STRING
+    pattern: "(trim)|(lower)|(upper)"
+inputs:
+  - name: original
+    size:
+      amount: inputSize
+    vars:
+      - name: values
+        size:
+          amount: inputTimes
+        operationalType:
+          - CATEGORICAL
+        dataType:
+          - STRING
+outputs:
+  - name: transformed
+    size:
+      amount: inputSize
+    vars:
+      - name: values
+        size:
+          amount: inputTimes
+        operationalType:
+          - CATEGORICAL
+        dataType:
+          - STRING
