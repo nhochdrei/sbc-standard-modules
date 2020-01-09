@@ -5,17 +5,13 @@ type: TRANSFORM
 parameters:
   - key: source
     type: LIST
-    operationalType:
-      - CATEGORICAL
-    dataType:
-      - STRING
+    operationalType: CATEGORICAL
+    dataType: STRING
     required: true
   - key: target
     type: LIST
-    operationalType:
-      - CATEGORICAL
-    dataType:
-      - STRING
+    operationalType: CATEGORICAL
+    dataType: STRING
     required: true
 inputs:
   - name: original

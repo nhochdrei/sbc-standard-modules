@@ -5,17 +5,13 @@ name: TextImportModule
 parameters:
   - key: files
     type: LIST
-    operationalType:
-      - CATEGORICAL
-    dataType:
-      - STRING
+    operationalType: CATEGORICAL
+    dataType: STRING
     pattern: ".+"
     required: true
   - key: delimiter
     type: SCALAR
-    operationalType:
-      - CATEGORICAL
-    dataType:
-      - STRING
+    operationalType: CATEGORICAL
+    dataType: STRING
     pattern: ".{1}"
     defaultValue: ","

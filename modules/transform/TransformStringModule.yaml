@@ -4,10 +4,8 @@ name: "TransformString"
 parameters:
   - key: action
     type: LIST
-    operationalType:
-      - CATEGORICAL
-    dataType:
-      - STRING
+    operationalType: CATEGORICAL
+    dataType: STRING
     pattern: "(trim)|(lower)|(upper)"
 inputs:
   - name: original
