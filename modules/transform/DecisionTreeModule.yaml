@@ -24,10 +24,8 @@ inputs:
           amount: 1
         operationalType:
           - CATEGORICAL
-          - ORDINAL
         dataType:
           - STRING
-          - INTEGER
 outputs:
   - name: nodes
     size:
