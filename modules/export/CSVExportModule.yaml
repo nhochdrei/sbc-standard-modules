@@ -1,7 +1,7 @@
 version: "1.0"
 
 type: EXPORT
-name: CSVImportModule
+name: CSVExportModule
 parameters:
   - key: file
     type: SCALAR
