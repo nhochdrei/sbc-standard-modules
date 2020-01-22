@@ -15,3 +15,9 @@ parameters:
     dataType: STRING
     pattern: ".{1}"
     defaultValue: ","
+  - key: quote
+    type: SCALAR
+    operationalType: CATEGORICAL
+    dataType: STRING
+    pattern: ".{1}"
+    defaultValue: '"'
