@@ -5,7 +5,6 @@ name: CSVExportModule
 parameters:
   - key: file
     type: SCALAR
-    operationalType: CATEGORICAL
     dataType: STRING
     pattern: ".+"
     required: true
