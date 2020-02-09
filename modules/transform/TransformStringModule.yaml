@@ -4,7 +4,6 @@ name: "TransformStringModule"
 parameters:
   - key: action
     type: LIST
-    operationalType: CATEGORICAL
     dataType: STRING
     pattern: "(trim)|(lower)|(upper)"
     required: true
