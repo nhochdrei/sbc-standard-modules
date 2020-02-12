@@ -3,12 +3,10 @@ version: "1.0"
 name: DecisionTreeModule
 inputs:
   - name: values
-    size:
-      amount: elemCount
+    size: elemCount
     vars:
       - name: source
-        size:
-          amount: featureCount
+        size: featureCount
         operationalType:
           - variant:
               - CATEGORICAL
@@ -20,36 +18,31 @@ inputs:
               - FLOAT
               - STRING
       - name: target
-        size:
-          amount: 1
+        size: 1
         operationalType:
           - CATEGORICAL
         dataType:
           - STRING
 outputs:
   - name: nodes
-    size:
-      amount: nodeCount
+    size: nodeCount
     vars:
       - name: node
-        size:
-          amount: 1
+        size: 1
         operationalType:
           - CATEGORICAL
         dataType:
           - INTEGER
         unique: true
       - name: children
-        size:
-          amount: 2
+        size: 2
         operationalType:
           - CATEGORICAL
         dataType:
           - INTEGER
         reference: outputs.nodes.node
       - name: feature
-        size:
-          amount: 1
+        size: 1
         operationalType:
           - CATEGORICAL
         dataType:

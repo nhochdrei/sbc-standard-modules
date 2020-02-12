@@ -9,24 +9,20 @@ parameters:
     required: true
 inputs:
   - name: original
-    size:
-      amount: inputSize
+    size: inputSize
     vars:
       - name: values
-        size:
-          amount: inputTimes
+        size: inputTimes
         operationalType:
           - CATEGORICAL
         dataType:
           - STRING
 outputs:
   - name: transformed
-    size:
-      amount: inputSize
+    size: inputSize
     vars:
       - name: values
-        size:
-          amount: inputTimes
+        size: inputTimes
         operationalType:
           - CATEGORICAL
         dataType:
