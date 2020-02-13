@@ -7,7 +7,6 @@ parameters:
     type: LIST
     dataType: STRING
     pattern: ".+"
-    required: true
   - key: delimiter
     type: SCALAR
     dataType: STRING

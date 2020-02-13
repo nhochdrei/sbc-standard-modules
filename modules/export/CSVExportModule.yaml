@@ -7,4 +7,3 @@ parameters:
     type: SCALAR
     dataType: STRING
     pattern: ".+"
-    required: true

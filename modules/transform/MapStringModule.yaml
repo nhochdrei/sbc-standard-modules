@@ -6,11 +6,9 @@ parameters:
   - key: source
     type: LIST
     dataType: STRING
-    required: true
   - key: target
     type: LIST
     dataType: STRING
-    required: true
 inputs:
   - name: original
     size: inputSize

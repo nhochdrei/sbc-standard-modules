@@ -6,7 +6,6 @@ parameters:
     type: LIST
     dataType: STRING
     pattern: "(trim)|(lower)|(upper)"
-    required: true
 inputs:
   - name: original
     size: inputSize
