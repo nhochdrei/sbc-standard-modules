@@ -16,7 +16,7 @@ inputs:
       - name: values
         size: inputTimes
         operationalType:
-          - CATEGORICAL
+          - NOMIAL
         dataType:
           - STRING
 outputs:
@@ -26,6 +26,6 @@ outputs:
       - name: values
         size: inputTimes
         operationalType:
-          - CATEGORICAL
+          - NOMIAL
         dataType:
           - STRING
