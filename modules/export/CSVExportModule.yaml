@@ -3,7 +3,8 @@ version: "1.0"
 type: EXPORT
 name: CSVExportModule
 parameters:
-  - key: file
+  - key: directory
     type: SCALAR
     dataType: STRING
     pattern: ".+"
+    defaultValue: "."
