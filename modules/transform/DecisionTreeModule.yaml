@@ -9,7 +9,7 @@ inputs:
         size: featureCount
         operationalType:
           - variant:
-              - NOMIAL
+              - NOMINAL
               - ORDINAL
               - METRIC
         dataType:
@@ -20,7 +20,7 @@ inputs:
       - name: target
         size: 1
         operationalType:
-          - NOMIAL
+          - NOMINAL
         dataType:
           - STRING
 outputs:
@@ -30,20 +30,20 @@ outputs:
       - name: node
         size: 1
         operationalType:
-          - NOMIAL
+          - NOMINAL
         dataType:
           - INTEGER
         unique: true
       - name: children
         size: 2
         operationalType:
-          - NOMIAL
+          - NOMINAL
         dataType:
           - INTEGER
         reference: outputs.nodes.node
       - name: feature
         size: 1
         operationalType:
-          - NOMIAL
+          - NOMINAL
         dataType:
           - STRING
