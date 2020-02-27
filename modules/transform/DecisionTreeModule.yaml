@@ -33,14 +33,12 @@ outputs:
           - NOMINAL
         dataType:
           - INTEGER
-        unique: true
       - name: children
         size: 2
         operationalType:
           - NOMINAL
         dataType:
           - INTEGER
-        reference: outputs.nodes.node
       - name: feature
         size: 1
         operationalType:
