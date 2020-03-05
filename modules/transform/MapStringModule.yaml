@@ -1,7 +1,6 @@
 version: "1.0"
 
 name: MapStringModule
-type: TRANSFORM
 parameters:
   - key: source
     type: LIST
