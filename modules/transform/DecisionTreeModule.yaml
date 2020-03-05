@@ -45,3 +45,15 @@ outputs:
           - NOMINAL
         dataType:
           - STRING
+      - name: criteria
+        size: 1
+        operationalType:
+          - NOMINAL
+        dataType:
+          - STRING
+      - name: valueCount
+        size: numOfTargetValues
+        operationalType:
+          - METRIC
+        dataType:
+          - INTEGER
